@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denton Plant Factory</title>
+    <style>
+        body {
+            background-color: #b6d9fd;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product p {
+            margin: 5px 0;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #contact-form {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        #contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #contact-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #cart {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Denton Plant Factory
+    <nav>
+        <a href="#" class="visually-hidden">Home</a>
+        <a href="#" class="visually-hidden">About</a>
+        <a href="#" class="visually-hidden">Contact</a>
+    </nav>
+</header>
+<div id="cart">
+    <img src="cart.png" alt="Cart">
+    <p id="cart-count">0</p>
+</div>
+<div class="product">
+    <img src="plant1.jpg" alt="Snake Plant">
+    <p>
+        <label for="plant1">
+            Name:
+        </label>
+        <strong>
+            Snake Plant
+        </strong>
+    </p>
+    <p>
+        <label for="plant1-description">
+            Description:
+        </label>
+        Native to West Africa, this plant is known for its air-purifying qualities.
+    </
